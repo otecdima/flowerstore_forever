@@ -9,7 +9,7 @@ import java.util.List;
 
 @Getter @Setter
 public class FlowerBucket extends Item {
-    List<Flower> flower_list = new ArrayList<>();
+    static List<Flower> flower_list = new ArrayList<>();
 
     public double price() {
         double price = 0;
@@ -28,7 +28,7 @@ public class FlowerBucket extends Item {
         return null;
     }
 
-    public void addFlowers(Flower flower){
+    public static void addFlowers(Flower flower){
         flower_list.add(flower);
     }
 }
