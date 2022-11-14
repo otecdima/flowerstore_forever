@@ -22,7 +22,7 @@ public class FlowerService {
 //                new Flower(3, "red", 100.0, 100.0));
     }
 
-    public void addFlower(@RequestBody Flower flower) {
+    public void addFlower(Flower flower) {
         flowerRepository.save(flower);
     }
 }
